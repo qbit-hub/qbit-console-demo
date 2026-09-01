@@ -1,0 +1,1 @@
+import{a as t,n,r as o}from"./jsx-runtime-XwvX9Bbv.js";var a=n(),r=t(o(),1),i=(0,r.createContext)(null);function u(){const e=(0,r.useContext)(i);if(!e)throw new Error("PanelAuthSessionProvider is missing from the application tree.");return e}export{u as n,i as t};

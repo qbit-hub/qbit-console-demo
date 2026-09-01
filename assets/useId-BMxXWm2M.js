@@ -1,0 +1,1 @@
+import{a as n,r as c}from"./jsx-runtime-XwvX9Bbv.js";var a=n(c(),1),r=0;function f(t){const[e,o]=a.useState(t),s=t||e;return a.useEffect(()=>{e==null&&(r+=1,o(`mui-${r}`))},[e]),s}var u={...a}.useId;function I(t){if(u!==void 0){const e=u();return t??e}return f(t)}export{I as t};

@@ -1,0 +1,1 @@
+import{a as t,r as n}from"./jsx-runtime-XwvX9Bbv.js";var r=t(n(),1),a=(0,r.createContext)(void 0);function i(){const e=(0,r.useContext)(a);if(!e)throw new Error("useGeneratedApi must be used inside GeneratedApiProvider");return e}function u(){return i().query}export{i as n,u as r,a as t};

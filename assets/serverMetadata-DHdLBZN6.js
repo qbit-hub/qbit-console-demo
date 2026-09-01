@@ -1,0 +1,2 @@
+function s(r){const e=r.split(/\r?\n/).map(t=>t.trim()).filter(Boolean).map(t=>{const a=t.indexOf("=");if(a<=0)throw new Error("Metadata lines must use key=value format.");const n=t.slice(0,a).trim(),o=t.slice(a+1).trim();if(!n)throw new Error("Metadata keys cannot be empty.");return[n,o]});return e.length?Object.fromEntries(e):void 0}function i(r){return r?Object.entries(r).sort(([e],[t])=>e.localeCompare(t)).map(([e,t])=>`${e}=${t}`).join(`
+`):""}function c(r,e){const t=s(r),a=s(e);return{...t?{tags:t}:{},...a?{labels:a}:{}}}export{s as n,i as r,c as t};

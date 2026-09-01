@@ -1,0 +1,1 @@
+var e=class extends Error{kind;status;code;correlationId;constructor(t,s,r={}){super(s,r.cause===void 0?void 0:{cause:r.cause}),this.name="QbitApiError",this.kind=t,this.status=r.status??null,this.code=r.code??null,this.correlationId=r.correlationId??null}};export{e as t};

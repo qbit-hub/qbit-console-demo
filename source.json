@@ -1,6 +1,6 @@
 {
-  "sourceRepository": "qbit-hub/qbit-console-web",
-  "sourceCommit": null,
-  "generated": false,
-  "status": "awaiting-first-publish"
+  "sourceCommit": "4f026ad885a0e1f05663951d7561c7178c482073",
+  "builtAt": "2026-09-01T18:16:19Z",
+  "mode": "browser-only-demo",
+  "backend": false
 }

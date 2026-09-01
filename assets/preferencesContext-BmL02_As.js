@@ -1,0 +1,1 @@
+import{a as t,r as n}from"./jsx-runtime-XwvX9Bbv.js";var r=t(n(),1),o=(0,r.createContext)(void 0);function a(){const e=(0,r.useContext)(o);if(!e)throw new Error("usePreferences must be used inside PreferencesProvider");return e}export{a as n,o as t};
