@@ -1,0 +1,53 @@
+name: Deploy Generated Demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qbit-console-demo-pages
+  cancel-in-progress: true
+
+jobs:
+  validate-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout generated artifact
+        uses: actions/checkout@v6
+
+      - name: Validate public artifact boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f index.html
+          test -f .nojekyll
+          test -f source.json
+          if find . -type f \( -name '*.map' -o -name '*.ts' -o -name '*.tsx' -o -name '.env*' -o -name '*.pem' -o -name '*.key' \) -not -path './.git/*' | grep -q .; then
+            echo 'Forbidden source or sensitive artifact detected.' >&2
+            exit 1
+          fi
+          for forbidden_dir in src tests e2e demo-e2e node_modules; do
+            test ! -e "$forbidden_dir" || { echo "Forbidden directory: $forbidden_dir" >&2; exit 1; }
+          done
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
