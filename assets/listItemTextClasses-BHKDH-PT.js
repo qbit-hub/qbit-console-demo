@@ -1,1 +1,0 @@
-import{M as e,N as s}from"./Typography-Rn6f7_wN.js";function a(t){return s("MuiListItemIcon",t)}var n=e("MuiListItemIcon",["root","alignItemsFlexStart"]);function r(t){return s("MuiListItemText",t)}var l=e("MuiListItemText",["root","multiline","dense","inset","primary","secondary"]);export{n as i,l as n,a as r,r as t};

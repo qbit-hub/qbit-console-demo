@@ -1,1 +1,0 @@
-import{M as i,N as t}from"./Typography-Rn6f7_wN.js";function l(e){return t("MuiDivider",e)}var a=i("MuiDivider",["root","absolute","fullWidth","inset","middle","flexItem","vertical","withChildren","textAlignRight","textAlignLeft","wrapper","wrapperVertical"]);export{l as n,a as t};

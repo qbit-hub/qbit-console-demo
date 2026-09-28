@@ -1,0 +1,1 @@
+import{A as i,j as t}from"./createSimplePaletteValueFilter-DtO_3UcJ.js";function l(e){return t("MuiDivider",e)}var a=i("MuiDivider",["root","absolute","fullWidth","inset","middle","flexItem","vertical","withChildren","textAlignRight","textAlignLeft","wrapper","wrapperVertical"]);export{l as n,a as t};

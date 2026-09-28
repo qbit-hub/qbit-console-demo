@@ -1,0 +1,1 @@
+import{A as e,j as s}from"./createSimplePaletteValueFilter-DtO_3UcJ.js";function a(t){return s("MuiListItemIcon",t)}var n=e("MuiListItemIcon",["root","alignItemsFlexStart"]);function r(t){return s("MuiListItemText",t)}var l=e("MuiListItemText",["root","multiline","dense","inset","primary","secondary"]);export{n as i,l as n,a as r,r as t};
