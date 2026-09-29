@@ -1,0 +1,1 @@
+import{t as r}from"./jsx-runtime-XwvX9Bbv.js";import{l as t}from"./Paper-C2w5K0Rj.js";var e=r(),o=t((0,e.jsx)("path",{d:"M2 20h20v-4H2zm2-3h2v2H4zM2 4v4h20V4zm4 3H4V5h2zm-4 7h20v-4H2zm2-3h2v2H4z"}),"StorageOutlined");export{o as t};
